@@ -1,5 +1,11 @@
 const PI: f64 = 3.14;
 //let b = 10;
+
+/*
+fjöllínu
+athugasemdir
+*/
+
 fn main() {
     let PI2 = 3.14;
     let mut langt_breytunafn = 10;
@@ -44,6 +50,27 @@ fn main() {
     println!("{:#?}", f2d);
     // föll
     fall_sem_prentar_geir();
+    let mut k = 10;
+    k = haekka_um_einn(k);
+    haekka_um_tvo(&mut k);
+    println!("addr k: {:p}", &k);
+}
+
+fn haekka_um_tvo(x: &mut i32) {
+    println!("addr x: {:p}", x);
+    *x += 2;
+    fn fall() {
+        // println!("x: {}", x); virkar ekki
+        let y = 20;
+    }
+    fall();
+    // println!("{}", y) virkar ekki
+}
+
+fn haekka_um_einn(x: i32) -> i32 {
+    // let k = x + 1;
+    // return k;
+    x + 1
 }
 
 fn fall_sem_skilar_fimm() -> i64 {
@@ -51,7 +78,7 @@ fn fall_sem_skilar_fimm() -> i64 {
     5    
 }
 
-fn fall_sem_tekur_faeribreytu(x: u16, y: f32) {
+fn fall_sem_tekur_faeribreytu(x: u16, y: f32) -> () {
     println!("Þú sendir mér {} og {}", x, y)
 }
 
