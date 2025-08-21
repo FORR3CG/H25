@@ -20,6 +20,6 @@ Forritið þarf svo að bregðast við með viðeigandi hætti ef notandi velur 
 
 ### Dæmi um virkni
 
-<img src="../../myndir/h24_v1.gif" width="50%" height="50%">
+<img src="../myndir/h24_v1.gif" width="50%" height="50%">
 
 
