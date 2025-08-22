@@ -22,4 +22,20 @@ Forritið þarf svo að bregðast við með viðeigandi hætti ef notandi velur 
 
 <img src="../myndir/h24_v1.gif" width="50%" height="50%">
 
+## Bjargir
 
+### Fá kvaðningu í sömu línu og útskrift
+
+```rust
+use std::io::Write;
+
+fn main() {
+    print!("Veldu núna: ");
+    std::io::stdout().flush().expect("Gat ekki hreinsað úttak, enda forrit!!");
+    let mut inntak = String::new();
+    std::io::stdin()
+        .read_line(&mut inntak)
+        .expect("Gat ekki lesið frá lyklaborði, enda forrit!!");
+    println!("Þú valdir: {}", inntak);
+}
+```
