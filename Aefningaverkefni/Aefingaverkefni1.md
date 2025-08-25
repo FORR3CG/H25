@@ -1,4 +1,4 @@
-# FORR3CG - Æfingaverkefni 1
+# FORR3CG - Æfingaverkefni 1 - ([lausn](./lausnir/aefingaverkefni_1/))
 
 - **Mælt er með að nota** eingöngu þær aðferðir sem kynntar hafa verið í fyrstu þremur köflum bókarinnar við lausn verkefnisins.
 
