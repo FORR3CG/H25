@@ -1,5 +1,5 @@
 mod bill;
-use crate::bill::{Bill, Litur};
+use crate::bill::{Bill, Litur, Reikniadgerdir};
 
 
 fn main() {
@@ -8,9 +8,12 @@ fn main() {
     let k = 10;
     // b2.nr = 1000;
     b2.litur = Litur::new(10, 20, 30);
+    println!("Bílnúmerið er: {}", b2.get_nr());
     println!("Bíllinn er {}", b2.get_nr());
-    println!("{:#?}", b2);
+    println!("{}\n", b2);
+    let b_str = b2.to_string();
     b2.prenta();
+    
     b2 = b2.prenta_tekur_ownership();
     //b2.litur = "Grænn".to_string();
 }
