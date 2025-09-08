@@ -1,4 +1,4 @@
-# FORR3CG - Æfingaverkefni 2 - `struct`, `enum` og `vec`
+# FORR3CG - Æfingaverkefni 3 - `struct`, `enum` og `vec`
 
 ## Verkefnið
 
