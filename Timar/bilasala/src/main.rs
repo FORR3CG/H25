@@ -11,5 +11,11 @@ fn main() {
     bs.skra_bil(101, "Toyota", "fb", 1000);
     bs.skra_bil(102, "Nissan", "j", 1000);
     bs.skra_bil(103, "Scania", "vörubíll", 1000);
+    bs.skoda_bil_med_id(101);
+    bs.skoda_bil_med_id(999);
+    bs.eyda_bil_med_id(999);
+    bs.eyda_bil_med_id(101);
     println!("{}", bs);
+    bs.breyta_verdi_a_bil_med_id(103, 5000);
+    bs.prenta_verd_allra_bila();
 }
