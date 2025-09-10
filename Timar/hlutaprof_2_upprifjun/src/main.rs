@@ -1,4 +1,4 @@
-use std::fmt::Display;
+use std::{collections::VecDeque, fmt::Display};
 
 // unitstruct
 struct Reikniadgerdir;
@@ -78,6 +78,13 @@ Result (Ok/Err)
 
 fn main() {
     let v = vec![1,2,3,4];
+    let mut vd = VecDeque::new();
+    vd.push_front(10);
+    vd.push_front(5);
+    vd.push_back(20);
+    vd.push_back(30);
+    vd.push_back(40);
+    
     if let Some(tala) = v.get(2) {
         println!("talan + 10 er {}", tala + 10);
     }
