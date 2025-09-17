@@ -7,6 +7,9 @@ use bilasala::Bilasala;
 
 fn main() {
     //let b = Bill::new(101, "Toyota", "fb", 1000);
+    // skrá Toyota fb 1000
+    // selja 101
+    // breyta 101 2000 
     let mut bs = Bilasala::new();
     bs.skra_bil(101, "Toyota", "fb", 1000);
     bs.skra_bil(102, "Nissan", "j", 1000);
