@@ -13,8 +13,8 @@ impl Bilasala {
         }
     }
 
-    pub fn skra_bil(&mut self, id: u32, gerd: &str, tegund: &str, verd: u32) {
-        self.bilar.push(Bill::new(id, gerd, tegund, verd));
+    pub fn skra_bil(&mut self, id: u32, gerd: &str, tegund: &str, verd: u32) -> Result<(), String> {
+        Ok(self.bilar.push(Bill::new(id, gerd, tegund, verd)?))
     }
 
     pub fn skoda_bil_med_id(&self, id: u32) {
