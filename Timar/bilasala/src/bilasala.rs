@@ -4,13 +4,27 @@ use crate::{bill::Bill, tegund};
 
 pub struct Bilasala {
     bilar: Vec<Bill>,
+    id: u32,
 }
 
 impl Bilasala {
     pub fn new() -> Self {
         Self {
             bilar: Vec::new(),
+            id: 1000,
         }
+    }
+
+    fn next_id(&mut self) -> u32 {
+        self.id += 1;
+        self.id
+    }
+
+    pub fn skra(&mut self, bilastrengur: &str) -> Result<(), String> {
+        // "Volvo j 3000" => "103 Volvo j 3000"
+        let bill = format!("{} {}", self.next_id(), bilastrengur);
+        Ok(self.bilar.push(Bill::try_from(bill.as_str())?))
+        
     }
 
     pub fn skra_bil(&mut self, id: u32, gerd: &str, tegund: &str, verd: u32) -> Result<(), String> {

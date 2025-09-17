@@ -12,10 +12,20 @@ fn main() {
     // selja 101
     // breyta 101 2000 
     let mut bs = Bilasala::new();
+    if let Err(e) = bs.skra("Nissan fb 2000") {
+        println!("{}", e)
+    }
+    bs.skra("Komatsu v 5000");
+    println!("{}", bs);
     if let Err(e) = bs.skra_bil(101, "Toyota", "bátur", 1000) {
         println!("{}", e)
     } else {
         println!("skráði bíl")
+    }
+    if let Err(e) = Bill::try_from("102 Tesla abc geir") {
+        println!("Villa: {}", e)
+    } else {
+        println!("Bjó til bíl")
     }
     bs.skra_bil(102, "Nissan", "j", 1000);
     bs.skra_bil(103, "Scania", "vörubíll", 1000);
