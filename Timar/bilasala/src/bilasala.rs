@@ -75,10 +75,15 @@ impl Bilasala {
 
 impl Display for Bilasala {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        let mut listinn = String::new();
-        for bill in &self.bilar {
+        /*         for bill in &self.bilar {
             listinn.push_str(format!("{}\n", bill).as_str());
-        }
-        write!(f, "{}", listinn.trim())
+            }
+            write!(f, "{}", listinn.trim()) */
+        let listinn = self.bilar
+                                     .iter()
+                                     .map(|bill| bill.to_string())
+                                     .collect::<Vec<String>>()
+                                     .join("\n");
+        writeln!(f, "{}", listinn)
     }
 }
