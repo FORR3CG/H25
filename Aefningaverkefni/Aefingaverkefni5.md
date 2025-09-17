@@ -10,7 +10,7 @@ Hver flugvél er með kallmerki (String), hraða í hnútum (u32) og fjarlægð 
 
 Síðan eru flugvélarnar geymdar í lista (Vec) sem er **raðaður** eftir hversu margar mínútur eru þar til þær koma að flugvellinum. Ef flugvél er nær flugvelli en 10 sjómílur er hún tekin úr listanum.
 
-Listinn þarf að eiga föll til að skrá flugvél, prenta allar flugvélar, prenta flugvélar sem eru innan ákveðinnar fjarlægðar og svo fall sem uppfærir staðsetningu flugvéla eftir upphefinn mínútufjölda.
+Listinn þarf að eiga föll til að skrá flugvél, prenta allar flugvélar, prenta flugvélar sem eru innan ákveðinnar fjarlægðar og svo fall sem uppfærir staðsetningu flugvéla eftir uppgefinn mínútufjölda.
 
 Gerðu svo snyrtilegt notendaviðmót (sambærilegt við bílasöluna) með góðri **villumeðhöndlun**.
 
