@@ -41,4 +41,4 @@ prenta allt # AAL5 farin úr listanum
     TF-ABC, hraði: 100 hn, fjarl.: 234 sm, tími: 140 mín.
 ```
 
-Lausnin kemur hér innan tíðar.
+Dæmi um lausn er [hér](https://github.com/FORR3CG/H25/tree/main/Aefningaverkefni/lausnir/aefingaverkefni_5).
