@@ -32,7 +32,7 @@ fn main() {
                     "hjálp" => println!("Skrifum út hjálpina"),
                     "skrá" => {
                         // skrá 101 Volvo fb 1000
-                        if let Err(e) = bs.skra_bil_str(skipanir[1..].join(" ").as_str()) {
+                        if let Err(e) = bs.skra(skipanir[1..].join(" ").as_str()) {
                             println!("{}", e)
                         }
                     },

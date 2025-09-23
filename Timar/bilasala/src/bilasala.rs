@@ -24,7 +24,7 @@ impl Bilasala {
         // "Volvo j 3000" => "103 Volvo j 3000"
         let bill = format!("{} {}", self.next_id(), bilastrengur);
         self.bilar.push(Bill::try_from(bill.as_str())?);
-        // self.bilar.sort_by_key(|bill| bill.verd()); // lægsta verð fyrst    
+        //self.bilar.sort_by_key(|bill| bill.verd()); // lægsta verð fyrst    
         self.bilar.sort_by(|a, b| b.verd().cmp(&a.verd())); // hæsta verð fyrst
         Ok(())
     }
