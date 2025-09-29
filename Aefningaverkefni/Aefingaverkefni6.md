@@ -4,7 +4,7 @@
 
 Bílasalan er að færa út kvíarnar og ætlar að bæta við möguleikanum að selja báta. Bilar hafa id (u32), tegund (String) og verð (u32). Bátar hafa id (u32), fjölda farþega (u16) og verð (u32).
 
-Búðu svo til trait sem hefur föllin as_any, id og verd. Tryggðu að allir sem nota trait-ið þurfi líka að útfæra Display.
+Búðu svo til trait sem hefur föllin as_any, id og verd (svipað og við gerðum í [dýragarðinum](../Timar/kafli_18/src/main.rs)). Tryggðu að allir sem nota trait-ið þurfi líka að útfæra Display.
 
 Gerðu svo struct til að halda utan um Vec af trait-inu sem þú gerðir hér fyrir ofan. Það þarf svo að eiga föll til að gera eftirfarandi:
 - Skrá bát
