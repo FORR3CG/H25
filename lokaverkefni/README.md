@@ -17,7 +17,6 @@
 
 - Verkefnið er einstaklingsverkefni. Ef tveir eða fleiri nemendur skila sömu lausnunum er gefið 0 (núll) fyrir þær lausnir.
 - Ekki er heimilt að nota gervigreind við lausn þessa verkefnis. Vertu viðbúin(n) því að geta útskýrst hvern einasta staf í kóðanum sem þú skilar. Einnig að gera breytingar á kóðanum ef beðið er um. Getir þú ekki útskýrt eitthvað í kóðanum eða ekki gert þær breytingar sem beðið er um verður gefið 0 (núll) fyrir verkefnið.
-- Ef kóði er tekinn af netinu (eða öðrum álíka stöðum t.d. AI) skal taka það fram, benda á hvaðan hann kemur og skrifa skýringar (e. comment) við hverja línu kóðans. Sé það ekki gert verður gefið 0 (núll) fyrir verkefnið í heild.
 - Sein skil, ekki er hægt að bjóða upp á sein skil í verkefninu. :exclamation:
 - Þýðing (e. compile) verkefnið á að þýðast villu- og viðvaranalaust.
 
