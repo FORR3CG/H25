@@ -9,13 +9,13 @@ use farartaekjasala::Farartaekjasala;
 fn main() {
     let mut fs = Farartaekjasala::new();
     // id verð tegund
-    fs.skra_bil("100 2000 Volvo");
-    fs.skra_bil("101 2500 Toyota");
-    fs.skra_bil("102 1500 Nizzan");
+    fs.skra_bil("geir 2000 Volvo").map_err(|villa| println!("{}", villa));
+    fs.skra_bil("101 2500 Toyota").map_err(|villa| println!("{}", villa));
+    fs.skra_bil("102 1500 Nizzan").map_err(|villa| println!("{}", villa));
     // id verð fjöldi_farþega
-    fs.skra_bat("103 5000 5" );
-    fs.skra_bat("104 10000 7");
-    fs.skra_bat("105 4000 3");
+    fs.skra_bat("103 5000 5" ).map_err(|villa| println!("{}", villa));
+    fs.skra_bat("104 10000 7").map_err(|villa| println!("{}", villa));
+    fs.skra_bat("105 4000 3").map_err(|villa| println!("{}", villa));
     println!("{}", fs);
     // Bíll, tegund: Volvo id: 100, verð: 2000 kr.
     // Bíll, tegund: Toyota id: 101, verð: 2500 kr.
