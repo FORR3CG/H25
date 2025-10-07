@@ -47,7 +47,7 @@ Listinn:
     - ákveðinni hæð í ákveðnu húsi.
   - Gögnin eru röðuð í listanum eftir húsi, hæð, herbergi og svo tegund búnaðar.
   - Skrifa og lesa gogn í/úr JSON skrá.
-  - Annað sem ykkur dettur í hug í samráði við kennara (allt að 10 stig).
+  - Annað sem ykkur dettur í hug í samráði við kennara.
 
 ## Ábendingar til ykkar frá ChatGPT
 
